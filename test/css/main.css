@@ -1,0 +1,35 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+. {
+  font-family: 'Pacifico', cursive;
+  font-size: 62px;
+}
+
+.color1 {
+  height: 300px;
+  width: 300px;
+  background-color: #981bb6;
+}
+
+.color2 {
+  height: 300px;
+  width: 300px;
+  background-color: #b71919;
+}
+
+.color3 {
+  height: 300px;
+  width: 300px;
+  background-color: #20a14f;
+}
+
+.color4 {
+  height: 300px;
+  width: 300px;
+  background-color: #1f5ea2;
+}
