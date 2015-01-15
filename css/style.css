@@ -22,7 +22,7 @@ html, body, .main {
     padding: 200px 20px 15px;
   }
 
-  .titles{
+  .titles, .audio{
     -webkit-animation-name: fade;
     animation-name: fade;
     -webkit-animation-fill-mode: both;
