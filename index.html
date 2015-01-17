@@ -3,14 +3,25 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>DickKron</title>
-  
-  <link rel="stylesheet" type="text/css" href="css/style.css">  
+  <title>Dickkron</title>
+
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto">
-  
+
+  <script src="js/main.js"></script>
+
   <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
   <link rel="icon" type="image/png" href="images/favicon.png">
-  
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Dickkron">
 
@@ -18,8 +29,26 @@
 
 <body>
 
-  <i class="main"></i>
-  <div class="container">  
+  <div class="modal hide fade" id='identity'>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p>One fine body&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <!-- <i class="main"></i> -->
+  <div class="container">
     <div class="titles">
       <h1>Hi Aaron</h1>
       <h2>What up with you homie ??</h2>
@@ -31,6 +60,6 @@
   <div class="github-icon">
 	<a href="https://github.com/amarinelli/dickkron" target="_blank"><img src="images/GitHub-Mark-32px.png" /></a>
   </div>
-  
+
 </body>
 </html>
