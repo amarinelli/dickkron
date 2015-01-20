@@ -22,6 +22,10 @@ body {
   padding: 175px 20px 15px;
 }
 
+.friends {
+  padding-top: inherit;
+}
+
 .titles, .audio{
   -webkit-animation-name: fade;
   animation-name: fade;
@@ -50,6 +54,7 @@ h1, h2, h3 {
 
 h2 {
   font-size: 2em;
+  padding-top: 15px;
 }
 
 h3 {
@@ -58,85 +63,6 @@ h3 {
 
 .combo {
   font-color: red;
-}
-
-@media (max-width: 900px) {
-  h1 {
-    font-size: 5em;
-  }
-  .container {
-    padding: 150px;
-  }
-}
-
-@media (max-width: 700px) {
-  h1 {
-    font-size: 5em;
-  }
-  .container {
-    padding: 100px;
-  }
-}
-
-@media (max-width: 660px) {
-  h1 {
-    font-size: 5em;
-  }
-  h2 {
-    font-size: 1.7em;
-  }
-  .container {
-    padding: 100px;
-  }
-}
-
-@media (max-width: 700px) and (orientation:landscape) {
-  h1 {
-    font-size: 5em;
-  }
-  h2 {
-    font-size: 1.7em;
-  }
-  .container {
-    padding: 10px;
-  }
-}
-
-@media (max-width: 550px) {
-  h1 {
-    font-size: 4em;
-  }
-
-  h2 {
-    font-size: 1.3em;
-  }
-  .container {
-    padding: 100px;
-  }
-}
-
-@media (max-width: 455px) {
-  h1 {
-    font-size: 3em;
-  }
-  h2 {
-    font-size: 1.1em;
-  }
-  .container {
-    padding: 50px;
-  }
-}
-
-@media (max-width: 350px) {
-  h1 {
-    font-size: 2.5em;
-  }
-  h2 {
-    font-size: 1.0em;
-  }
-  .container {
-    padding: 50px;
-  }
 }
 
 @-webkit-keyframes fade {
@@ -155,4 +81,13 @@ h3 {
 	position: fixed;
   bottom: 5px;
 	right: 5px;
+}
+
+.home-icon {
+  position: fixed;
+  font-size: 1.7em;
+  text-shadow: 0 0 0px black;
+  color: black;
+  bottom: 2px;
+  left: 5px;
 }

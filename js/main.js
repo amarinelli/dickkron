@@ -1,10 +1,42 @@
-$( document ).ready(function() {
+(function(angular) {
 
-  console.log("ready!");
+  // The module code
+  angular
+  .module('angularApp', [])
+  .controller('MainController', ['$scope', '$http', MainController]); //use this array syntax for minification
 
+  // The controller code
+  function MainController($scope, $http) {
 
-    var user = location.search.split("=");
-    console.log(user[1]);
-    $('#name').html('Hi ' + user[1]);
+    $scope.options = [
+      {label: 'Aaron', value: 'Aaron'},
+      {label: 'Shawn', value: 'Shawn'},
+      {label: 'Ian', value: 'Ian'},
+      {label: 'Pete', value: 'Pete'},
+      {label: 'Roger', value: 'Roger'}
+    ];
 
-});
+    var onGetFriend = function(response) {
+      $scope.friends = response.data;
+      $scope.friendName = response.data[$scope.correctlySelected.value].name
+      $scope.friendCaption = response.data[$scope.correctlySelected.value].caption
+    };
+
+    var onError = function(reason) {
+      $scope.error = "Could not fetch the data.";
+    };
+
+    $scope.search = function(username) {
+      $http.get("data/info.json")
+      .then(onGetFriend, onError);
+    };
+
+    $scope.home = function() {
+      $scope.friends = false;
+    }
+
+    $scope.greeting = "Identify yourself...";
+
+  }
+
+})(window.angular);

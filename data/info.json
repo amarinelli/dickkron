@@ -1,0 +1,42 @@
+{
+  "Aaron": {
+    "caption": "Yo, what up with you homie?",
+    "image": {
+      "url": "None"
+    },
+    "name": "Aaron",
+    "nickname": "Kron"
+  },
+  "Ian": {
+    "caption": "Football is my jam",
+    "image": {
+      "url": "None"
+    },
+    "name": "Ian",
+    "nickname": "Tanner"
+  },
+  "Pete": {
+    "caption": "Hey Budday!",
+    "image": {
+      "url": "None"
+    },
+    "name": "Pete",
+    "nickname": "Pedro"
+  },
+  "Roger": {
+    "caption": "I'm a pirate!",
+    "image": {
+      "url": "None"
+    },
+    "name": "Roger",
+    "nickname": "Rouge"
+  },
+  "Shawn": {
+    "caption": "I'm Tom Cruise bro!",
+    "image": {
+      "url": "None"
+    },
+    "name": "Shawn",
+    "nickname": "Cruise"
+  }
+}
