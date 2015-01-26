@@ -1,8 +1,12 @@
-<div class="container friends">
-  <div class="titles">
-    <h1 id='name'>Hi {{friendName}}</h1>
-    <h2>{{friendCaption}}</h2>
+<div class="container friends titles">
+  <div class="row">
+      <h1 class="col-md-12" id='name'>Hi {{friendName}}</h1>
   </div>
-  <div id="media" class="audio">    
+  <div class="row">
+      <h2 class="col-md-12">{{friendCaption}}</h2>
+  </div>
+  <div class="row">
+    <div id="media" class="audio video-container col-md-12">
+    </div>
   </div>
 </div>

@@ -20,9 +20,14 @@
       $scope.friends = response.data;
       $scope.friendName = response.data[$scope.correctlySelected.value].name
       $scope.friendCaption = response.data[$scope.correctlySelected.value].caption
-	  $scope.friendMedia = response.data[$scope.correctlySelected.value].media
-	  $("#media").html($scope.friendMedia);
-	  
+	    $scope.friendMedia = response.data[$scope.correctlySelected.value].media
+	    $("#media").html($scope.friendMedia);
+      
+	    if (Boolean(jQuery("iframe[src^='//www.youtube.com']").length)) {
+        $("#media").addClass("video-container");
+      } else {
+        $("#media").removeClass("video-container");
+      }
     };
 
     var onError = function(reason) {
